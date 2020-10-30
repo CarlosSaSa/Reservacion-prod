@@ -45,6 +45,8 @@ var Reservaciones_1 = require("../models/Reservaciones");
 var flattenObject_1 = require("../utils/flattenObject");
 var Salones_1 = require("../models/Salones");
 var moment_1 = __importDefault(require("moment"));
+require("moment/locale/es-mx");
+moment_1.default.locale('es-mx');
 // Controlador para crear una reservacion
 exports.crearReservacion = function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
     var _a, fecha_inicio, fecha_fin, salon, id, errors, overlapsDate, ReservacionEvent, Reservacion, error_1;
